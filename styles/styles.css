@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 #top-header {
@@ -25,7 +26,6 @@
 }
 
 #top-header__nav a {
-  font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
@@ -42,4 +42,56 @@
   border-radius: 5px;
   font-size: 20px;
   font-weight: bold;
+}
+
+#bottom-footer {
+  background: #bcf7ff;
+  height: 12rem;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#bottom-footer__logo img {
+  margin: 5px 0 0 1rem;
+  height: 4rem;
+}
+
+#bottom-footer__links {
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+}
+
+#bottom-footer__links a {
+  color: #000;
+  text-decoration: none;
+}
+
+#bottom-footer__copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  line-height: 3px;
+}
+
+#bottom-footer__copyright img {
+  width: 22px;
+  margin-right: 8px;
+}
+
+#bottom-footer__copyright__instagram {
+  display: flex;
+  align-items: center;
+}
+
+#bottom-footer__copyright__instagram_phrase {
+  font-size: 1rem;
+}
+
+#bottom-footer__copyright_phrase {
+  font-size: 12px;
 }
