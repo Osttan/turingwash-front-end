@@ -17,37 +17,30 @@
       <nav id="top-header__nav">
         <a href="#">Meus carros</a>
         <a href="#">Minhas lavagens</a>
-        <button id="top-header__nav_exitBtn">Sair</button>
+        <button class="blue-btn">Sair</button>
       </nav>
     </header>
     <div class="container">
-      <div>
-        <h1>Meus carros</h1>
-      </div>
-      <section id="my-cars">
-        <div class="my-cars__cars">
-          <div class="my-cars__car">
-            <h4>Nissan Kicks</h4>
-            <p class="my-cars__year">2018</p>
-          </div>
-          <div>
-            <button class="my-cars__exclude">Excluir carro</button>
-          </div>
+      <h2>Meus carros</h2>
+
+      <div class="car">
+        <div class="car__name">
+          <p>Nissan Kicks</p>
+          <p>2018</p>
         </div>
-        <div class="my-cars__cars">
-          <div class="my-cars__car">
-            <h4>Chevrolet Onix</h4>
-            <p class="my-cars__year">2015</p>
-          </div>
-          <div>
-            <button class="my-cars__exclude">Excluir carro</button>
-          </div>
-        </div>
-      </section>
-      <div id="add-car">
-        <button class="btn-primary">Adicionar carro</button>
+        <button class="car_exclude">Excluir carro</button>
       </div>
+      <div class="car">
+        <div class="car__name">
+          <p>Chevrolet Onix</p>
+          <p>2015</p>
+        </div>
+        <button class="car_exclude">Excluir carro</button>
+      </div>
+
+      <button id="container__addBtn" class="blue-btn">Adicionar carro</button>
     </div>
+
     <footer id="bottom-footer">
       <div id="bottom-footer__logo">
         <img src="./images/turingwash-logo.svg" alt="logo TuringWash" />
