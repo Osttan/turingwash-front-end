@@ -77,12 +77,12 @@ body {
   justify-content: space-around;
 }
 
-#washers__profiles {
+#washers {
   margin-top: 2rem;
   width: 85%;
 }
 
-.washers {
+.washers__profiles {
   background-color: #fff;
   position: relative;
   margin: 1rem;
@@ -93,49 +93,49 @@ body {
   border-radius: 10px;
 }
 
-.washers img {
-  height: 85px;
-  margin-left: 10px;
+.washers__profiles img {
+  height: 80px;
+  margin-left: 12px;
 }
 
-.washers___profile-name {
+.washers___profiles_name {
   font-weight: bold;
   position: absolute;
   top: 12px;
-  left: 110px;
+  left: 105px;
 }
 
-.washers___avaliacoes {
+.washers__profiles__ratings {
   display: flex;
   position: absolute;
   top: 0;
   right: 0;
-  gap: 30px;
+  gap: 20px;
   font-weight: bold;
 }
 
-.washers___avaliacoes p:first-child {
+.washers__profiles__ratings p:first-child {
   margin-top: 7px;
 }
 
-.washer__price {
+.washers__profiles__ratings_price {
   background-color: #dcfcfe;
   width: 80px;
   height: 35px;
 }
 
-.washer__price p {
+.washers__profiles__ratings_price p {
   margin-left: 17px;
   margin-top: 7px;
 }
 
-.washers__show-ratings {
+.washers__profiles__ratings-washBtn {
   display: flex;
   align-items: center;
   position: absolute;
-  right: 8px;
-  bottom: 8px;
-  gap: 25px;
+  right: 10px;
+  bottom: 10px;
+  gap: 40px;
 }
 
 .wash-btn {
