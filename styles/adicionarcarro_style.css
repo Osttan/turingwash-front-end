@@ -101,6 +101,7 @@ body {
   height: 35px;
   width: 145px;
   font-size: 1rem;
+  margin-bottom: 2rem;
 }
 
 #bottom-footer {
@@ -155,4 +156,38 @@ body {
 #bottom-footer__copyright_phrase {
   margin-top: 12px;
   font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  #bottom-footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    font-size: 0.9rem;
+  }
+
+  #bottom-footer__logo {
+    align-self: center;
+  }
+
+  #bottom-footer__links {
+    margin: 1rem;
+  }
+
+  #bottom-footer__copyright {
+    margin: 0 10px 10px 0;
+  }
+
+  #bottom-footer__copyright img {
+    width: 1rem;
+    margin-right: 5px;
+  }
+
+  #bottom-footer__copyright__instagram_phrase {
+    font-size: 0.7rem;
+  }
+
+  #bottom-footer__copyright_phrase {
+    font-size: 0.6rem;
+  }
 }
