@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.blue-btn {
+  cursor: pointer;
+  background-color: #8ff2ff;
+  border: none;
+  border-radius: 5px;
+}
