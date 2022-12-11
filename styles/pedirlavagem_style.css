@@ -1,6 +1,7 @@
 @import url('./header.css');
 @import url('./footer.css');
 @import url('./reset-body-blue_btn.css');
+@import url('./hamburger_menu.css');
 
 .container {
   background-color: #eaf7ff;
@@ -151,6 +152,7 @@
     flex-direction: column;
     align-self: flex-end;
     align-items: flex-end;
+    font-size: 0.8rem;
     top: 1.1rem;
     right: 1rem;
     gap: 0.8rem;
@@ -190,6 +192,10 @@
   .container h1 {
     margin: 2.5rem;
     font-size: inherit;
+  }
+
+  .washers__profiles__ratings {
+    font-size: 0.7rem;
   }
 }
 
