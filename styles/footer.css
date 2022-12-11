@@ -57,6 +57,7 @@
     display: flex;
     flex-direction: column;
     height: auto;
+    font-size: 0.8rem;
   }
 
   #bottom-footer__logo {

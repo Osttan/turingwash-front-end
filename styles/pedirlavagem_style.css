@@ -54,6 +54,10 @@
   left: 105px;
 }
 
+.washers__profiles_see-ratings {
+  display: none;
+}
+
 .washers__profiles__ratings {
   display: flex;
   position: absolute;
@@ -87,8 +91,115 @@
   gap: 40px;
 }
 
+.washers__profiles__ratings-washBtn a {
+  text-decoration: none;
+}
+
 .wash-btn {
   height: 30px;
   width: 145px;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    font-size: 0.9rem;
+  }
+
+  .container h1 {
+    margin: 2.5rem;
+    font-size: 1rem;
+  }
+
+  #container__car-distance {
+    width: 100%;
+    font-size: inherit;
+    justify-content: space-evenly;
+  }
+
+  #washers {
+    width: 95%;
+  }
+
+  .washers__profiles {
+    height: 160px;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .washers___profiles_name {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-left: 1rem;
+  }
+
+  .washers__profiles img {
+    height: 4rem;
+    width: 4rem;
+    margin-left: 1.5rem;
+  }
+
+  .washers__profiles_see-ratings {
+    display: inline;
+    text-decoration: none;
+    margin-left: 1rem;
+  }
+
+  .washers__profiles__ratings {
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: flex-end;
+    top: 1.1rem;
+    right: 1rem;
+    gap: 0.8rem;
+  }
+
+  .washers__profiles__ratings_price {
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+  }
+
+  .washers__profiles__ratings p:first-child {
+    margin-top: 0;
+  }
+
+  .washers__profiles__ratings p:last-child {
+    margin-top: 0.6rem;
+    margin-left: 0.9rem;
+  }
+
+  .washers__profiles__ratings-washBtn a {
+    display: none;
+  }
+
+  .wash-btn {
+    height: 25px;
+    width: 130px;
+    font-size: inherit;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    font-size: 0.8rem;
+  }
+
+  .container h1 {
+    margin: 2.5rem;
+    font-size: inherit;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    font-size: 0.7rem;
+  }
+
+  .container h1 {
+    margin: 2.5rem;
+    font-size: inherit;
+  }
 }
