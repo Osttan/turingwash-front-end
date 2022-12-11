@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 @import url('./header.css');
 @import url('./footer.css');
 @import url('./reset-body-blue_btn.css');
@@ -13,8 +12,9 @@
   justify-content: flex-start;
 }
 
-.container h2 {
-  margin: 3rem 0 3rem 0;
+.container h1 {
+  margin: 3rem;
+  font-size: 1.4rem;
 }
 
 .car {
@@ -53,6 +53,6 @@
 
 #container__addBtn {
   padding: 12px;
-  margin: 1rem 0 1rem 0;
+  margin: 1rem 0 3rem 0;
   font-size: 1rem;
 }
