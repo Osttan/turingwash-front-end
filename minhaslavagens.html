@@ -42,7 +42,7 @@
       <h1>Minhas lavagens</h1>
 
       <section id="my-washes">
-        <div class="my-washes__single">
+        <!-- <div class="my-washes__single">
           <div class="my-washes__single__name">
             <p>Lavador</p>
             <p>Joana Santos</p>
@@ -105,7 +105,7 @@
             <p>R$ 75</p>
             <p>20 de Abril de 2022</p>
           </div>
-        </div>
+        </div> -->
       </section>
     </div>
     <footer id="bottom-footer">
@@ -129,12 +129,34 @@
       </div>
     </footer>
     <script src="./scripts/usuario.js"></script>
+    <script src="./scripts/lavagens.js"></script>
     <script>
       if (!usuario.logado) {
         const loginBtn = document.getElementsByClassName('top-header__nav_btn');
         for (let btn of loginBtn) {
           btn.innerText = 'Entrar';
         }
+      }
+
+      for (let lavagem of lavagens) {
+        const cardLavagem = document.createElement('div');
+        cardLavagem.innerHTML = `<div class="my-washes__single">
+          <div class="my-washes__single__name">
+            <p>Lavador</p>
+            <p>${lavagem.lavador}</p>
+          </div>
+
+          <div class="my-washes__single__car">
+            <p>Carro</p>
+            <p>${lavagem.carro}</p>
+          </div>
+
+          <div class="my-washes__single__price-date">
+            <p>R$ ${lavagem.valorCobrado}</p>
+            <p>${lavagem.data}</p>
+          </div>
+        </div>`;
+        document.getElementById('my-washes').appendChild(cardLavagem);
       }
     </script>
   </body>

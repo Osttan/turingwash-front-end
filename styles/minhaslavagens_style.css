@@ -45,12 +45,10 @@
   border-radius: 10px;
 }
 
-.my-washes__single__name p:last-child {
-  font-weight: bold;
-}
-
+.my-washes__single__name p:last-child,
 .my-washes__single__car p:last-child {
   font-weight: bold;
+  margin-top: 0.2rem;
 }
 
 .my-washes__single__price-date p:first-child {
