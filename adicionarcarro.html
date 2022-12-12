@@ -34,7 +34,7 @@
       <nav id="top-header__nav">
         <a href="./meuscarros.html">Meus carros</a>
         <a href="./minhaslavagens.html">Minhas lavagens</a>
-        <button class="blue-btn">Sair</button>
+        <button id="top-header__nav_btn" class="blue-btn">Sair</button>
       </nav>
     </header>
 
@@ -85,5 +85,11 @@
         </p>
       </div>
     </footer>
+    <script src="./scripts/usuario.js"></script>
+    <script>
+      if (!usuario.logado) {
+        document.getElementById('top-header__nav_btn').innerText = 'Entrar';
+      }
+    </script>
   </body>
 </html>
