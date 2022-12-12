@@ -1,5 +1,5 @@
 const usuario = {
   nome: 'João',
   email: 'joao@mail.com',
-  logado: false,
+  logado: true,
 };

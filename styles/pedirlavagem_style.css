@@ -24,7 +24,7 @@
 }
 
 #washers {
-  margin-top: 2rem;
+  margin: 2rem 0 3rem 0;
   width: 85%;
 }
 
@@ -37,10 +37,6 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
-}
-
-.washers__profiles:last-child {
-  margin-bottom: 3rem;
 }
 
 .washers__profiles img {

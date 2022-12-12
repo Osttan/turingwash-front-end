@@ -97,7 +97,7 @@
   font-weight: 600;
   position: absolute;
   width: 110%;
-  height: 160%;
+  height: 250%;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -116,7 +116,7 @@
 
 #menu li {
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 1.2rem;
 }
 
 /*

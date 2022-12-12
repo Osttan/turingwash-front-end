@@ -22,7 +22,7 @@
           <ul id="menu">
             <a href="./meuscarros.html"><li>Meus carros</li></a>
             <a href="./minhaslavagens.html"><li>Minhas lavagens</li></a>
-            <button class="blue-btn">Sair</button>
+            <button class="top-header__nav_btn blue-btn">Sair</button>
           </ul>
         </div>
       </nav>
@@ -34,7 +34,7 @@
       <nav id="top-header__nav">
         <a href="#">Meus carros</a>
         <a href="./minhaslavagens.html">Minhas lavagens</a>
-        <button id="top-header__nav_btn" class="blue-btn">Sair</button>
+        <button class="top-header__nav_btn blue-btn">Sair</button>
       </nav>
     </header>
     <div class="container">
@@ -81,7 +81,10 @@
     <script src="./scripts/usuario.js"></script>
     <script>
       if (!usuario.logado) {
-        document.getElementById('top-header__nav_btn').innerText = 'Entrar';
+        const loginBtn = document.getElementsByClassName('top-header__nav_btn');
+        for (let btn of loginBtn) {
+          btn.innerText = 'Entrar';
+        }
       }
     </script>
   </body>

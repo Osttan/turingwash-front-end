@@ -23,7 +23,7 @@
           <ul id="menu">
             <a href="./meuscarros.html"><li>Meus carros</li></a>
             <a href="./minhaslavagens.html"><li>Minhas lavagens</li></a>
-            <button class="blue-btn">Sair</button>
+            <button class="top-header__nav_btn blue-btn">Sair</button>
           </ul>
         </div>
       </nav>
@@ -37,7 +37,7 @@
       <nav id="top-header__nav">
         <a href="./meuscarros.html">Meus carros</a>
         <a href="./minhaslavagens.html">Minhas lavagens</a>
-        <button id="top-header__nav_btn" class="blue-btn">Sair</button>
+        <button class="top-header__nav_btn blue-btn">Sair</button>
       </nav>
     </header>
     <div class="container">
@@ -49,7 +49,7 @@
       </div>
 
       <section id="washers">
-        <div class="washers__profiles">
+        <!-- <div class="washers__profiles">
           <a class="washers__profiles_see-ratings" href="#">Ver avaliações</a>
           <img src="./images/profile.png" alt="profile image" />
           <p class="washers___profiles_name">João Pereira</p>
@@ -119,7 +119,7 @@
             <a href="#">Ver avaliações</a>
             <button class="blue-btn wash-btn">Lavar meu Carro</button>
           </div>
-        </div>
+        </div> -->
       </section>
     </div>
     <footer id="bottom-footer">
@@ -143,9 +143,35 @@
       </div>
     </footer>
     <script src="./scripts/usuario.js"></script>
+    <script src="./scripts/lavadores.js"></script>
     <script>
       if (!usuario.logado) {
-        document.getElementById('top-header__nav_btn').innerText = 'Entrar';
+        const loginBtn = document.getElementsByClassName('top-header__nav_btn');
+        for (let btn of loginBtn) {
+          btn.innerText = 'Entrar';
+        }
+      }
+
+      for (let lavador of lavadores) {
+        const cardLavador = document.createElement('div');
+        cardLavador.innerHTML = `<div class="washers__profiles">
+          <a class="washers__profiles_see-ratings" href="#">Ver avaliações</a>
+          <img src="./images/profile.png" alt="profile image" />
+          <p class="washers___profiles_name">${lavador.nome}</p>
+
+          <div class="washers__profiles__ratings">
+            <p>${lavador.nota} (${lavador.qtdAvaliacoes} avaliações)</p>
+            <div class="washers__profiles__ratings_price">
+              <p>R$${lavador.valorCobrado}</p>
+            </div>
+          </div>
+
+          <div class="washers__profiles__ratings-washBtn">
+            <a href="#">Ver avaliações</a>
+            <button class="blue-btn wash-btn">Lavar meu Carro</button>
+          </div>
+        </div>`;
+        document.getElementById('washers').appendChild(cardLavador);
       }
     </script>
   </body>
